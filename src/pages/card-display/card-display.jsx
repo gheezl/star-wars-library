@@ -3,12 +3,21 @@ import React, { Fragment } from "react";
 import "./card-display.css"
 
 
-const CardDisplay = () => {
+const CardDisplay = ({ data }) => {
+    console.log(data)
     return (
         <Fragment>
-            <h2>
-                hi
-            </h2>
+            {
+                data
+                    ? (
+                        <h2>
+                            {data.count}
+                        </h2>
+                    )
+                    : (
+                        null
+                    )
+            }
         </Fragment>
     )
 }
