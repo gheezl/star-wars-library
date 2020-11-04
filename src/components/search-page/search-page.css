@@ -30,3 +30,8 @@
     display: flex;
     justify-content: center;
 }
+
+.search-border {
+    margin-top: 25px;
+    margin-left: 10px;
+}
