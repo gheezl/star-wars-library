@@ -7,7 +7,7 @@ import Card from "../../components/card/card.jsx"
 
 const SearchPage = () => {
     let [inputData, setInputData] = useState(null)
-    let [starWarsData, setStarWarsData] = useState([1, 2, 3])
+    let [starWarsData, setStarWarsData] = useState(["placeholder"])
 
     const onChangeFunction = (event) => {
         setInputData(event.target.value)
@@ -18,7 +18,6 @@ const SearchPage = () => {
             .then(response => response.json())
             .then(result => setStarWarsData(result.results))
     }
-
 
     return (
         <Fragment>
