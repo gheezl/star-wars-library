@@ -7,4 +7,26 @@
 .input-form {
     padding: 5px;
     width: 350px;
+    border: black solid 1px;
+    transition: 0.5s;
+}
+
+.input-form:hover {
+    background-color: whitesmoke;
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.search-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.question-mark-border {
+    display: flex;
+    justify-content: center;
 }
