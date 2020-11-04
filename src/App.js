@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 
+import SearchPage from "./components/search-page/search-page.jsx"
+
 
 const App = () => {
   return (
     <Fragment>
-      <h1>
-        HI
-      </h1>
+      <SearchPage />
     </Fragment>
   )
 }
