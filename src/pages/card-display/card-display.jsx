@@ -1,23 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from "react"
 
 import "./card-display.css"
 
+import Card from "../../components/card/card.jsx"
 
-const CardDisplay = ({ data }) => {
-    console.log(data)
+
+const CardDisplay = ({ individualData }) => {
+    console.log(individualData, "1")
     return (
         <Fragment>
-            {
-                data
-                    ? (
-                        <h2>
-                            {data.count}
-                        </h2>
-                    )
-                    : (
-                        null
-                    )
-            }
+            <div>
+                {individualData.map(data => {
+                    <Card data={data} />
+                })}
+            </div>
         </Fragment>
     )
 }
