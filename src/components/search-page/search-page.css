@@ -1,5 +1,10 @@
+.input-border {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
 .input-form {
     padding: 5px;
     width: 350px;
-    /* border: none; */
 }

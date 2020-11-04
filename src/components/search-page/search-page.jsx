@@ -6,7 +6,7 @@ import "./search-page.css"
 const SearchPage = () => {
     return (
         <Fragment>
-            <div>
+            <div className="input-border" >
                 <input placeholder="Search Star Wars Information" className="input-form" />
             </div>
         </Fragment>
