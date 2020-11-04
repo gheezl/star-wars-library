@@ -16,10 +16,18 @@
     margin-top: 35px;
 }
 
+.header-search:hover {
+    opacity: 0.75;
+}
+
 .header-title {
     display: flex;
     justify-content: center;
     grid-column-start: 2;
+}
+
+.header-title:hover {
+    opacity: 0.75;
 }
 
 .header-about {
@@ -27,4 +35,8 @@
     justify-content: center;
     grid-column-start: 3;
     margin-top: 35px;
+}
+
+.header-about:hover {
+    opacity: 0.75;
 }
