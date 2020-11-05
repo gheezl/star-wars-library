@@ -4,7 +4,6 @@ import "./card.css"
 
 
 const Card = ({ individualData }) => {
-    console.log(individualData, "1")
     return (
         <Fragment>
             {
