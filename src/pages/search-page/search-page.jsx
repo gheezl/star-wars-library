@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 
 import "./search-page.css"
 
-import Card from "../../components/card/card.jsx"
+import Card from "../../components/card-container/card-container.jsx"
 
 
 const SearchPage = () => {
