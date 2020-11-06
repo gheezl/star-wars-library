@@ -6,8 +6,6 @@ import Card from "../card/card.jsx"
 
 
 const Card = ({ individualData }) => {
-    let [toggle, setToggle] = useState(false)
-
     console.log(individualData)
 
     return (
@@ -16,23 +14,7 @@ const Card = ({ individualData }) => {
                 individualData.map(data => {
                     if (data.name) {
                         return (
-                            <Fragment>
-                                <Card data={data} />
-                                {/* <div className="name-border">
-                                    <span onMouseEnter={() => setToggle(!toggle)} onMouseLeave={() => setToggle(!toggle)} >{data.name}</span>
-                                </div>
-                                {
-                                    toggle
-                                        ? (
-                                            <div>
-                                                <span>hi</span>
-                                            </div>
-                                        )
-                                        : (
-                                            null
-                                        )
-                                } */}
-                            </Fragment>
+                            <Card data={data} />
                         )
                     }
                     else {
