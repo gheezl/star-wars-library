@@ -4,7 +4,9 @@ import "./card.css"
 
 
 const Card = ({ individualData }) => {
-    let [toggle, setToggle] = useState(null)
+    let [toggle, setToggle] = useState(false)
+
+    console.log(individualData)
 
     return (
         <Fragment>
@@ -14,8 +16,19 @@ const Card = ({ individualData }) => {
                         return (
                             <Fragment>
                                 <div className="name-border">
-                                    <span>{data.name}</span>
+                                    <span onMouseEnter={() => setToggle(!toggle)} onMouseLeave={() => setToggle(!toggle)} >{data.name}</span>
                                 </div>
+                                {
+                                    toggle
+                                        ? (
+                                            <div>
+                                                <span>hi</span>
+                                            </div>
+                                        )
+                                        : (
+                                            null
+                                        )
+                                }
                             </Fragment>
                         )
                     }
