@@ -8,20 +8,24 @@ const Card = ({ individualData }) => {
 
     return (
         <Fragment>
-        {
+            {
                 individualData.map(data => {
                     if (data.name) {
-                        return(
-                            <span>{data.name}</span>
+                        return (
+                            <Fragment>
+                                <div className="name-border">
+                                    <span>{data.name}</span>
+                                </div>
+                            </Fragment>
                         )
                     }
                     else {
-                        return(
+                        return (
                             <span classname="instructions" >hi</span>
                         )
                     }
-                })    
-        }
+                })
+            }
         </Fragment>
     )
 }
