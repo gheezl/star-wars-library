@@ -1,12 +1,28 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useState } from "react"
 
 import "./card.css"
 
 const Card = ({ data }) => {
+    let [toggle, setToggle] = useState(true)
+
+    console.log(data)
 
     return (
         <Fragment>
-            <span>{data.name}</span>
+            <div className="name-border" >
+                <span className="name" onMouseEnter={() => setToggle(false)} onMouseLeave={() => setToggle(true)} >{data.name}</span>
+                {
+                    toggle
+                        ? (
+                            null
+                        )
+                        : (
+                            <div>
+                                <span>{data.birth_year}</span>
+                            </div>
+                        )
+                }
+            </div>
         </Fragment>
     )
 }

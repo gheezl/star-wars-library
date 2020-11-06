@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react"
 
-import "./card.css"
+import "./card-container.css"
 
 import Card from "../card/card.jsx"
 
 
-const Card = ({ individualData }) => {
+const CardContainer = ({ individualData }) => {
     console.log(individualData)
 
     return (
@@ -28,4 +28,4 @@ const Card = ({ individualData }) => {
     )
 }
 
-export default Card;
+export default CardContainer;
