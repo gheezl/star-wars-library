@@ -22,6 +22,9 @@ const SearchPage = () => {
     return (
         <Fragment>
             <div className="input-border">
+                <div classname="instructions-border">
+                    <span className="instructions" > Search Planets, Spaceships, Vehicles, People, Films and Species. </span>
+                </div>
                 <div className="search-border">
                     <input onChange={onChangeFunction} placeholder="Search Star Wars Information" className="input-form" />
                     <button onClick={onSearchFunction} className="search-button" >Search</button>

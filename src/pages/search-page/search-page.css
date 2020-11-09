@@ -1,6 +1,9 @@
-.input-border {
+.instructions {
     display: flex;
     justify-content: center;
+}
+
+.input-border {
     margin-top: 150px;
 }
 
@@ -35,6 +38,8 @@
 }
 
 .search-border {
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
     margin-left: 10px;
 }

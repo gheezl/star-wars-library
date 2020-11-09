@@ -18,11 +18,7 @@ const CardContainer = ({ individualData }) => {
                         )
                     }
                     else {
-                        return (
-                            <div classname="search-instructions">
-                                <span className="instructions" > Search Planets, Spaceships, Vehicles, People, Films and Species. </span>
-                            </div>
-                        )
+                        return(null)
                     }
                 })
             }
